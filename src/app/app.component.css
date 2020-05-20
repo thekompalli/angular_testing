@@ -1,0 +1,124 @@
+* {
+	padding: 0px;
+    margin: 0px;
+}
+.fspan {
+	display: inline-flex;
+}
+.topdiv {
+	position: relative;
+	display: grid;
+	background-color: rgb(86, 86, 86);
+    padding: 5vw 0vw;
+    height: 260px;
+}
+.topdiv::before {
+	content: '';
+	background-color: rgb(238, 238, 238);
+	width: 100%;
+	position: absolute;
+	height: 25%;
+    top: calc(100% - 22% - 4vw);
+}
+.topdiv::after {
+	content: 'BRIAN DUDEY';
+	position: absolute;
+	color: rgb(40, 35, 37);
+	background-color: rgb(244, 187, 53);
+	font-size: 5vw;
+	padding: 0.8vw;
+	top: calc(100% - 12% - 6vw);
+	left: 32%;
+    border-radius: 20px;
+    top: 100px
+    
+}
+.image {
+    place-self: center;
+	border-radius: 50%;
+	border: 0.6vw dotted rgb(230, 173, 40);
+}
+.parent {
+	position: relative;
+	display: grid;
+	grid-template-rows: auto auto;
+	border: 2px solid rgb(86, 86, 86);
+}
+.parent::before {
+	content: '';
+	height: 90%;
+	position: absolute;
+	top: 8%;
+	left: 48%;
+	border: 0.5px solid rgb(86, 86, 86);
+}
+.spantop {
+	place-self: center;
+	text-align: center;
+	padding: 1rem;
+	border-bottom: 3px solid black;
+}
+.dividehead {
+	justify-self: center;
+	display: flex;
+}
+.divide {
+	flex: 1;
+	display: grid;
+	margin: 0 1.8rem;
+	justify-content: left;
+	grid-template-rows: auto auto auto;
+}
+.divide:last-child {
+	grid-template-rows: auto auto;
+}
+.subdiv {
+	margin: 1rem 0.5rem;
+	display: grid;
+}
+.heading {
+	font-size: 4vw;
+}
+.heading:first-child {
+	margin-bottom: 1rem;
+}
+.parentspan {
+	display: inline-flex;
+}
+.subhead,
+.subspan {
+	margin: 1vw;
+	flex: 1;
+	justify-self: left;
+	align-self: center;
+}
+
+.subdiv:nth-child(2) .subhead {
+	justify-self: center;
+}
+.para,
+.subhead,
+.subspan,
+.spantop {
+	font-family: sans-serif;
+	font-size: 2vw;
+}
+.onlylist ul {
+	list-style: none;
+}
+
+.para,
+.subspan,
+.spantop,
+li {
+	color: rgb(31, 30, 30);
+	font-weight: bold;
+}
+li {
+	font-family: sans-serif;
+	margin: 0.5vw;
+	font-size: 2vw;
+}
+li:first-child {
+	margin-bottom: 1vw;
+}
